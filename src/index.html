@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="books" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>books</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/styles.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- header -->
+    <header class="header">
+        <div class="container">
+          <h1 class="header-heading">
+            <span class="header-heading__bg">Путь JavaScript</span>
+          </h1>            
+        </div>
+    </header>
+    <!-- / header -->
+
+    <main>
+      
+      <!-- books -->
+      <section class="books">
+        <div class="books-container">
+          <figure class="books-wrap">
+
+            <div class="books-data">
+              <p class="books-data__text">12<br> <span class="books-data__month">Апреля</span></p>              
+            </div>
+            
+            <img class="books-wrap__img" src="img/books.jpg" srcset="img/books2x.jpg 2x" width="738" height="300" alt="Книги по JavaScript" title="Книги по JavaScript">
+            
+            <figcaption class="books-wrap__signature"><i>Можно выделить три основных направления для прогресса JavaScript <span class="text-mb">Middleюю </span></i></figcaption>
+
+           </figure>
+        </div>
+      </section>
+      <!-- /books -->      
+
+      <!-- quote -->
+      <section class="quote">
+        <div class="container">
+          <h2 class="quote__heading section-heading">Серверный JavaScript</h2>
+          <blockquote class="quote__text">Разработчики и клиенты часто неправильно понимают, что такое система. Они видят графический интерфейс и думают, что он и есть система. Они определяют систему в терминах графического интерфейса и считают, что должны сразу начать работу с графическим интерфейсом. Они не понимают важнейшего принципа: ввод/вывод не важен.</blockquote>
+          <cite class="quote__author">— Р. Мартин</cite>
+        </div>
+      </section>
+      <!-- /quote --> 
+
+      <!-- advertisement -->
+      <section class="advertisement">
+        <div class="container container--advertisement">
+          <p class="advertisement__text">Реклама на <a href="https://blabla.com/">blabla.com</a></p>
+          <picture>            
+            <source media="(max-width: 768px)" srcset="img/books-mb.jpg 1x, img/books-mb2x.jpg 2x" width="280" height="200">
+            <img src="img/books-2.jpg" srcset="img/books-22x.jpg 2x" width="610" height="200" alt="blabla.com" title="blabla.com">
+          </picture>          
+        </div>
+      </section>
+      <!-- /advertisement --> 
+
+      <!-- ending -->
+      <section class="ending">
+        <div class="container">
+          <h2 class="ending__heading section-heading">Заключение</h2>
+          <p class="ending__text">Синхрония осознаёт сюжетный верлибр. Мифопорождающее текстовое устройство диссонирует лирический субъект. Абстрактное высказывание пространственно просветляет деструктивный символ. Ямб, несмотря на то, что все эти характерологические черты отсылают не к единому образу нарратора, интегрирует мифопоэтический хронотоп. Действительно, ударение приводит палимпсест. Контрапункт приводит ритм.</p>
+        </div>
+      </section>
+      <!-- /ending -->
+
+      <!-- form -->
+      <section class="form">
+        <div class="container">
+          <h3 class="rating-heading">Оцените статью</h3>
+          <div class="rating-area">
+            <input type="radio" id="star-5" name="rating" value="5">
+            <label for="star-5" title="Оценка «5»"></label>	
+            <input type="radio" id="star-4" name="rating" value="4" checked>
+            <label for="star-4" title="Оценка «4»"></label>    
+            <input type="radio" id="star-3" name="rating" value="3" checked>
+            <label for="star-3" title="Оценка «3»"></label>  
+            <input type="radio" id="star-2" name="rating" value="2" checked>
+            <label for="star-2" title="Оценка «2»"></label>    
+            <input type="radio" id="star-1" name="rating" value="1" checked>
+            <label for="star-1" title="Оценка «1»"></label>
+          </div>
+
+          <h3 class="form-heading">Добавить комментарий к книге</h3>
+
+          <div class="form-wrap">
+            <fieldset class="form__element form__element--name">
+              <label class="form__label" for="name-user">Ваше имя</label>
+              <input class="form__input form__input--name" id="name-user" name="name" type="text" required="">
+              <span class="form__placeholder">Имя</span>
+            </fieldset>
+  
+            <fieldset class="form__element form__element--email">
+              <label class="form__label" for="email">Email</label>
+              <input class="form__input form__input--email" id="email" name="email" type="email" required="">
+              <span class="form__placeholder">E-mail</span>
+            </fieldset>
+  
+            <div class="form__element form__element--book">            
+              <div class="select form__input form__input--book">
+                <div class="select__header">
+                  <span class="select__current">Выберите книгу</span>
+                  <div class="select__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="11" height="6" viewBox="0 0 11 6" fill="none">
+                      <path d="M1.18182 1L5.18182 5L9.18182 1" stroke="#212121" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                </div>
+              
+                <div class="select__body">
+                  <div class="select__item">JavaScript ниндзя</div>
+                  <div class="select__item">Pragmatic Guide to JavaScript</div>
+                  <div class="select__item">Pro JavaScript Techniques</div>
+                  <div class="select__item">Выразительный JavaScript</div>                 
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <fieldset class="form__element form__element--textarea"> 
+            <label class="form__label" for="comment-field">Ваш отзыв</label>
+            <textarea class="form__textarea" name="text" id="comment-field" placeholder="Ваш отзыв"></textarea>        
+          </fieldset>
+
+          <fieldset class="form__element ad-form__element--submit">
+            <button class="btn btn--submit" type="submit">ОТПРАВИТЬ</button>            
+          </fieldset>            
+             
+        </div>
+      </section>
+      <!-- /form -->
+
+      <!-- posts -->
+      <section class="posts">
+        <div class="container">
+          <h2 class="posts__heading section-heading">Похожие посты</h2>
+
+          <!-- slider -->
+          <section class="slider">
+            <div class="container">
+              <div class="swiper-container">
+                <div class="swiper-wrapper slider__list">
+                  <div class="slider__item swiper-slide">
+                    <div class="slider__img-wrap">
+                      <img class="slider__img" src="img/slider1.jpg" width="226" height="226" alt="ReactJS" title="ReactJS">
+                      <p class="slider__text">События жизненного цикла ReactJS</p>
+                    </div>                
+                  </div>
+                  <div class="slider__item swiper-slide">
+                    <div class="slider__img-wrap">
+                      <img class="slider__img" src="img/slider2.jpg" width="226" height="226" alt="CSS Grids" title="CSS Grids">
+                      <p class="slider__text">CSS Grids. Полное руководство</p>
+                    </div>                                            
+                  </div>
+                  <div class="slider__item swiper-slide">
+                    <div class="slider__img-wrap">
+                      <img class="slider__img" src="img/slider3.jpg" width="226" height="226" alt="JavaScript" title="JavaScript">
+                      <p class="slider__text">Асинхронность в JavaScript</p>
+                    </div>                
+                  </div>              
+                </div>                
+              <div class="swiper-pagination"></div>                             
+            </div>                          
+            </div>      
+          </section>    
+          <!-- /slider -->
+        </div>
+      </section>
+      <!-- /posts -->
+
+    </main>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> 
+    <script src="js/scripts.min.js"></script>
+</body>
+</html>
